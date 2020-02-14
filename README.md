@@ -42,6 +42,12 @@ server app
 mvn exec:java -D "exec.mainClass"="edu.escuelaing.arep.SparkWebApp"
 ```
 
+client http
+
+```
+mvn exec:java -D "exec.mainClass"="edu.escuelaing.arep.HttpClient"
+```
+
 ## Deployment
 
 [web heroku parcial](https://arep-parcial1-siabatto.herokuapp.com/) - heroku deploy
