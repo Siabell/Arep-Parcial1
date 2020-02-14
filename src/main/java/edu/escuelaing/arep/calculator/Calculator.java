@@ -12,16 +12,20 @@ public class Calculator {
 			//codigo
 			intArray[i]= Integer.parseInt(numberList.get(i));
 		}
+		
 		List<Integer> intList = new ArrayList<Integer>();
 		MergeSort<Integer> merge = new MergeSort<Integer>();
-		
 		MergeSort.mergeSort(intArray, intArray.length);
+		
+		int sumatoria = 0;
+		
 		for(Integer i: intArray) {
 			String number = Integer.toString(i); 
 			lista+=number+",";
+			sumatoria+=i;
         }
 		String listResult=lista.substring(0,lista.length()-1);
-		String result ="{\"lista\":\""+listResult+"\"}";
+		String result ="{\"lista\":\""+listResult+"\",\"suma\":"+sumatoria+"}";
 		return result;
 	}
 }
