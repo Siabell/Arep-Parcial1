@@ -11,7 +11,7 @@ app = (function () {
             $("#lista").empty();
             
             var datos = JSON.parse(result);
-            alert(datos);
+            //alert(datos);
             var lista = "Lista ordenada: " +datos.lista;
 
             $("#lista").append(lista);
@@ -32,7 +32,7 @@ api = (function () {
     
     return {      
         getResult: function (dataList, callback) {
-            alert( "Load was performed." );
+            //alert( "Load was performed." );
             $.get( '/calculator/'+dataList, function( data ) {
         	    callback(data);
         		
