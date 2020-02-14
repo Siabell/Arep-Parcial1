@@ -1,4 +1,4 @@
-#Arep-Parcial1
+# Arep-Parcial1
 ## Getting Started
 
  In order to use this project, first clone this repository or download the project.
@@ -37,6 +37,7 @@ The application will be available in:
 ```
 
 server app
+
 ```
 mvn exec:java -D "exec.mainClass"="edu.escuelaing.arep.SparkWebApp"
 ```
