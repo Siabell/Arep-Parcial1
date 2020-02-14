@@ -11,17 +11,8 @@ app = (function () {
             $("#lista").empty();
             
             var datos = JSON.parse(result);
-            var lista = "Mean : " +datos.mean;
-
-            $("#lista").append(lista);
-            
-        },
-
-        showHello: function (result) {
-            $("#lista").empty();
-            
-            var datos = JSON.parse(result);
-            var lista = "Mean : " +datos.lista;
+            alert(datos);
+            var lista = "Lista ordenada: " +datos.lista;
 
             $("#lista").append(lista);
             
@@ -41,16 +32,8 @@ api = (function () {
     
     return {      
         getResult: function (dataList, callback) {
-            //alert( "Load was performed." );
+            alert( "Load was performed." );
             $.get( '/calculator/'+dataList, function( data ) {
-        	    callback(data);
-        		
-        		});
-        	
-        },
-        getHello: function (dataList, callback) {
-            //alert( "Load was performed." );
-            $.get( '/hello'+dataList, function( data ) {
         	    callback(data);
         		
         		});
