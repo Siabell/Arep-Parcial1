@@ -9,12 +9,13 @@ app = (function () {
 
         showResultCalculation: function (result) {
             $("#lista").empty();
-            
+            $("#suma").empty();
             var datos = JSON.parse(result);
             //alert(datos);
             var lista = "Lista ordenada: " +datos.lista;
-
+            var suma = "Sumatoria: " +datos.suma;
             $("#lista").append(lista);
+            $("#suma").append(suma);
             
         },
 
