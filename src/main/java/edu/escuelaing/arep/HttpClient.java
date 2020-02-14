@@ -15,8 +15,8 @@ public class HttpClient {
 	
 	private static void sendPost() throws IOException {
 		
-		//URL url = new URL("https://arep-parcial1-siabatto.herokuapp.com/");
-		URL url = new URL("http://localhost:5000/calculator");
+		URL url = new URL("https://arep-parcial1-siabatto.herokuapp.com/calculator");
+		//URL url = new URL("http://localhost:5000/calculator");
 		HttpURLConnection con = (HttpURLConnection) url.openConnection();
 		con.setRequestMethod("POST");
 		String pruebaLista = "5,4,3,2,1";
