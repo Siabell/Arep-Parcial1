@@ -6,7 +6,7 @@ public class SparkWebApp {
 	
 	
 	public static void main(String[] args) {
-		staticFiles.location("/WebApp");
+		staticFiles.location("/webApp");
 		port(getPort());
 		get("/hello", (req, res) -> "Hello Heroku");
 		 
@@ -21,9 +21,6 @@ public class SparkWebApp {
             String result ="{\"lista\":"+hola+"}";
             //String result ="{\"lista\":"+hola+"}";
             return gson.toJson(result);
-          //String result ="{\"lista\":"+hola+"}";
-          //String result ="{\"lista\":"+hola+"}";
-          //String result ="{\"lista\":"+hola+"}";
 		});
 		
 	}
